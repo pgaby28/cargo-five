@@ -1,0 +1,27 @@
+<template>
+  <div id="app">
+    <nav-menu></nav-menu>
+    <router-view/>
+    <footer-section></footer-section>
+  </div>
+</template>
+
+<script>
+import NavMenu from '@/components/NavMenu.vue'
+import FooterSection from '@/components/FooterSection.vue'
+
+export default {
+  name: 'App',
+  components: { NavMenu, FooterSection }
+}
+</script>
+
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+</style>
